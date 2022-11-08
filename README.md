@@ -2,9 +2,9 @@
 ## Demo
 Hay un demo disponible en https://chocolatcat.github.io/bsale-trial-frontend/index.html
 ## Tecnologías usadas
-ECMAScript
-Fetch API
-[Bulma](https://bulma.io/)
+* ECMAScript
+* Fetch API
+* [Bulma](https://bulma.io/)
 ## Workflow
 Todas las rutas se consumen utilizando la Fetch API de Javascript. Esto se hace de forma asincrona para no bloquear el hilo principal del sitio. Esto tambien usa la API de Promesas de Javascript.
 ```
