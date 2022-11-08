@@ -1,0 +1,11 @@
+.image img{
+    height: 200px !important;
+    width: 200px !important;
+    object-fit: cover;
+    padding: 2px;
+    margin:auto;
+}
+
+.column {
+    display: flex;
+}
