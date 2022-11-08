@@ -1,6 +1,6 @@
 # bsale-trial-frontend
 ## Demo
-Hay un demo disponible en https://chocolatcat.github.io/bsale-trial-frontend/index.html
+Hay un demo disponible en https://chocolatcat.github.io/bsale-trial-frontend/
 ## Tecnologías usadas
 * ECMAScript
 * Fetch API
