@@ -24,12 +24,17 @@
             </div>
             <div class="tabs is-centered">
                 <ul id="categorias">
-                    <li><a onclick=fetchProducts()>TODOS</a></li>
+                    <li><a onclick=fetchProducts(1)>TODOS</a></li>
                 </ul>
             </div>
             <div id="productos" class="columns is-flex is-flex-wrap-wrap">
                 
             </div>
+            <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+                <ul id="pagination-list" class="pagination-list">
+
+                </ul>
+            </nav>
         </div>
     </section>
 </body>
