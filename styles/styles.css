@@ -6,6 +6,10 @@
     margin:auto;
 }
 
+.strikethrough{
+    text-decoration: line-through;
+}
+
 .column {
     display: flex;
 }
