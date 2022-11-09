@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     addCategories();
+    document.getElementById('busqueda-button').addEventListener('click', () => {
+        let busqueda = document.getElementById('busqueda-input').value;
+        searchProducts(busqueda, 1);
+    });
 });
 
 //Funcion conveniente para crear elementos dependiendo de la etiqueta
@@ -25,9 +29,29 @@ function createProduct(name, price, url_image){
         </div>`;
 }
 
-async function fetchCategory(id){
+async function searchProducts(text, page = 0){
     //Conectamos al backend
-    const response = await fetch(`https://bsale-trial-backend-production.up.railway.app/api/products/filter/${id}`, {
+    const response = await fetch(`https://bsale-trial-backend-production.up.railway.app/api/products/search?name=${text}${page > 0 ? '&page=' + page : ''}`, {
+        method: 'GET'
+    //procesamos la respuesta
+    }).then((resp)=> resp.json()).then(({data})=>{
+        const products = document.getElementById('productos');
+        products.innerHTML = '';
+        data.map((producto) => {
+            let container = createNode('div');
+            container.classList.add('column', 'is-one-third-desktop', 'is-half-tablet', 'is-full-mobile');
+            container.innerHTML = createProduct(producto.name, producto.price, producto.url_image);
+            append(products, container);
+        });
+    //bloque de error
+    }).catch((err)=>{
+        console.log(err);
+    });
+}
+
+async function fetchCategory(id, page = 0){
+    //Conectamos al backend
+    const response = await fetch(`https://bsale-trial-backend-production.up.railway.app/api/products/filter/${id}${page > 0 ? '?page=' + page : ''}`, {
         method: 'GET'
     //procesamos la respuesta
     }).then((resp)=> resp.json()).then(({data})=>{
@@ -81,7 +105,7 @@ async function addCategories(){
             let li = createNode('li');
             let a = createNode('a');
             a.innerText = cat.name.toUpperCase();
-            a.onclick = () => fetchCategory(cat.id);
+            a.onclick = () => fetchCategory(cat.id, 1);
             append(li, a);
             append(ul, li);
         });
