@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('busqueda-button').addEventListener('click', () => {
         //Buscamos el texto de la caja y ejecutamos la busqueda
         let busqueda = document.getElementById('busqueda-input').value;
-        searchProducts(busqueda, 1);
+        if(busqueda.length > 0){
+            searchProducts(busqueda, 1);
+        }
+        else{
+            fetchProducts(1);
+        }
     });
     //Y el pulsar enter para buscar
     document.getElementById('busqueda-input').addEventListener('keypress', (event) => {
