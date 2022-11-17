@@ -1,4 +1,13 @@
 # bsale-trial-frontend
+## Objetivo
+Consumir el [Backend](https://github.com/chocolatcat/bsale-trial-backend) para mostrar los datos proveídos por Bsale.
+## Como utilizar.
+Simplemente abrir `index.html` en tu navegador. El archivo `script.js` debe estar en la misma carpeta.
+## Estructura
+`index.html` es la pagina que nos mostrara los datos.  
+`script.js` nos provee la funcionalidad para consumir el backend que se proporcionó.  
+La carpeta `img` contiene una imagen para mostrar en caso de que un producto no tenga una imagen asignada.  
+La carpeta `styles` tiene el CSS adicional del sitio.  
 ## Demo
 Hay un demo disponible en https://chocolatcat.github.io/bsale-trial-frontend/
 ## Tecnologías usadas
