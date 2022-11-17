@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //API routes - Las declaramos para poder modificarlas mas facilmente
-const SEARCH = "https://bsale-trial-backend-production.up.railway.app/api/products/search";
-const FILTER = 'https://bsale-trial-backend-production.up.railway.app/api/products/filter/';
-const FETCH = 'https://bsale-trial-backend-production.up.railway.app/api/products';
-const CATEGORIES = 'https://bsale-trial-backend-production.up.railway.app/api/categories';
+const SEARCH = "https://bsale-trial-backend.up.railway.app/api/products/search";
+const FILTER = 'https://bsale-trial-backend.up.railway.app/api/products/filter/';
+const FETCH = 'https://bsale-trial-backend.up.railway.app/api/products';
+const CATEGORIES = 'https://bsale-trial-backend.up.railway.app/api/categories';
 
 //Funcion conveniente para crear elementos dependiendo de la etiqueta
 function createNode(element) {
