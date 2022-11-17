@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-//API routes - Las declaramos para poder modificarlas mas facilmente
+//API routes - Las declaramos para poder modificarlas mas facilmente!
 const SEARCH = "https://bsale-trial-backend.up.railway.app/api/products/search";
 const FILTER = 'https://bsale-trial-backend.up.railway.app/api/products/filter/';
 const FETCH = 'https://bsale-trial-backend.up.railway.app/api/products';
