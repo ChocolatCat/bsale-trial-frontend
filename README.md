@@ -23,7 +23,7 @@ const response = await fetch('url de la api', {
   //Logica
 }).catch((err) => console.log(err));
 ```
-## Funcionamientog
+## Funcionamiento
 * Los elementos son cargados de forma dinamica al elegir una categoria. "TODOS" carga todos los productos en la BD.  
 * Cada categoria se carga de forma dinamica en una tab-bar hecha con Bulma. Al clickear una, se remueven los elementos cargados anteriormente y luego se cargan los elementos de la categoría deseada, usando la API de backend.  
 * Los elementos se benefician de Flexbox y Bulma para que se muestren de forma ordenada y responsiva.  
