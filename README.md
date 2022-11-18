@@ -1,8 +1,9 @@
 # bsale-trial-frontend
 ## Objetivo
-Consumir el [Backend](https://github.com/chocolatcat/bsale-trial-backend) para mostrar los datos proveídos por Bsale.
+Este es un frontend que despliega un catalogo de productos, con la información proveída por un [Backend](https://github.com/chocolatcat/bsale-trial-backend) mediante APIs REST.
 ## Como utilizar.
-Simplemente abrir `index.html` en tu navegador. El archivo `script.js` debe estar en la misma carpeta.
+Clonar el repositorio a tu computador.  
+Luego de extraer, abrir `index.html` en tu navegador. El archivo `script.js` debe estar en la misma carpeta.
 ## Estructura
 `index.html` es la pagina que nos mostrara los datos.  
 `script.js` nos provee la funcionalidad para consumir el backend que se proporcionó.  
